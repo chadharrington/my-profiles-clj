@@ -8,7 +8,7 @@
             [jonase/eastwood "0.2.1"]
             [lein-ancient "0.6.3"]
             [lein-bikeshed "0.2.0"]
-            [lein-cloverage "1.0.3"]
+            [lein-cloverage "1.0.2"]
             [lein-kibit "0.0.8"]]
   :test-refresh {:notify-command ["terminal-notifier"
                                   "-title" "Tests" "-message"]}}}
