@@ -1,6 +1,7 @@
 {:user
  {:signing {:gpg-key "chad@farbetter.com"}
-  :dependencies [[pjstadig/humane-test-output "0.7.0"]]
+  :dependencies [[pjstadig/humane-test-output "0.7.0"]
+                 [mvxcvi/puget "0.8.1"]]
   :injections [(require 'pjstadig.humane-test-output)
                (pjstadig.humane-test-output/activate!)]
   :plugins [[cider/cider-nrepl "0.8.2"]
