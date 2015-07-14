@@ -14,6 +14,7 @@
             [lein-cloverage "1.0.6"]
             [lein-cprint "1.0.0"]
             [lein-kibit "0.1.2"]
-            [lein-try "0.4.3"]]
+            [lein-try "0.4.3"]
+            [lein-vanity "0.2.0"]]
   :test-refresh {:notify-command ["terminal-notifier"
                                   "-title" "Tests" "-message"]}}}
