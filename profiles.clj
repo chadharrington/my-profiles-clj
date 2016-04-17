@@ -12,9 +12,9 @@
   {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
 
   :plugins
-  [[cider/cider-nrepl "0.11.0-SNAPSHOT"]
-   [com.jakemccrary/lein-test-refresh "0.12.0"]
-   [lein-ancient "0.6.8" :exclusions [org.clojure/clojure]]
+  [[cider/cider-nrepl "0.12.0"]
+   [com.jakemccrary/lein-test-refresh "0.14.0"]
+   [lein-ancient "0.6.10" :exclusions [org.clojure/clojure]]
    [lein-cprint "1.2.0" :exclusions [org.clojure/clojure]]
    [lein-kibit "0.1.2" :exclusions [org.clojure/clojure]]
    [lein-try "0.4.3"]
