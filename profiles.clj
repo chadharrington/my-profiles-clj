@@ -18,7 +18,7 @@
    [lein-cprint "1.2.0" :exclusions [org.clojure/clojure]]
    [lein-kibit "0.1.2" :exclusions [org.clojure/clojure]]
    [lein-try "0.4.3"]
-   [lein-vanity "0.2.0"]]
+   [lein-vanity "0.2.0" :exclusions [org.clojure/clojure]]]
 
   :test-refresh {:notify-command ["terminal-notifier"
                                   "-title" "Tests" "-message"]}}}
