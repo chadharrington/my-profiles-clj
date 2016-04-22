@@ -3,7 +3,7 @@
   :dependencies
   [[com.cemerick/piggieback "0.2.1"]
    [org.clojure/tools.nrepl "0.2.12"]
-   [pjstadig/humane-test-output "0.7.1"]]
+   [pjstadig/humane-test-output "0.8.0"]]
 
   :injections [(require 'pjstadig.humane-test-output)
                (pjstadig.humane-test-output/activate!)]
