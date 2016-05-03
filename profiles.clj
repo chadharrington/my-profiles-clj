@@ -14,10 +14,13 @@
   :plugins
   [[cider/cider-nrepl "0.12.0"]
    [com.jakemccrary/lein-test-refresh "0.14.0"]
-   [lein-ancient "0.6.10" :exclusions [org.clojure/clojure]]
-   [lein-bikeshed "0.3.0"]
+   [lein-ancient "0.6.10" :exclusions [org.clojure/clojure commons-codec]]
+   [lein-bikeshed "0.3.0" :exclusions [org.clojure/clojure]]
    [lein-cprint "1.2.0" :exclusions [org.clojure/clojure]]
-   [jonase/eastwood "0.2.3"]
+   ;; Because of confusion with a defunct project also called
+   ;; lein-release, we exclude lein-release from lein-ancient.
+   [lein-release "1.0.9" :exclusions [org.clojure/clojure] :upgrade false]
+   [jonase/eastwood "0.2.3" :exclusions [org.clojure/clojure]]
    [lein-kibit "0.1.2" :exclusions [org.clojure/clojure]]
    [lein-try "0.4.3"]]
 
