@@ -7,8 +7,7 @@
   {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
 
   :plugins
-  [[cider/cider-nrepl "0.12.0"]
-   [com.jakemccrary/lein-test-refresh "0.14.0"]
+  [[com.jakemccrary/lein-test-refresh "0.14.0"]
    [lein-ancient "0.6.10" :exclusions [org.clojure/clojure commons-codec]]
    [lein-bikeshed "0.3.0" :exclusions [org.clojure/clojure]]
    [lein-cloverage "1.0.6"]
