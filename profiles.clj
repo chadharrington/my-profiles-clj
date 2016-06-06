@@ -7,7 +7,7 @@
   {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
 
   :plugins
-  [[com.jakemccrary/lein-test-refresh "0.14.0"]
+  [[com.jakemccrary/lein-test-refresh "0.15.0"]
    [lein-ancient "0.6.10" :exclusions [org.clojure/clojure commons-codec]]
    [lein-bikeshed "0.3.0" :exclusions [org.clojure/clojure]]
    [lein-cloverage "1.0.6"]
@@ -20,7 +20,8 @@
    [lein-try "0.4.3"]]
 
   :dependencies
-  [[com.cemerick/piggieback "0.2.1"]
+  [[com.cemerick/piggieback "0.2.1"
+    :exclusions [org.clojure/clojurescript org.hamcrest/hamcrest-core]]
    [org.clojure/tools.nrepl "0.2.12"]
    [pjstadig/humane-test-output "0.8.0"]]
 
