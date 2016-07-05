@@ -12,6 +12,7 @@
    [lein-bikeshed "0.3.0" :exclusions [org.clojure/clojure]]
    [lein-cloverage "1.0.6"]
    [lein-cprint "1.2.0" :exclusions [org.clojure/clojure]]
+   [lein-pprint "1.1.1"]
    ;; Because of confusion with a defunct project also called
    ;; lein-release, we exclude lein-release from lein-ancient.
    [lein-release "1.0.9" :exclusions [org.clojure/clojure] :upgrade false]
@@ -26,7 +27,13 @@
    [pjstadig/humane-test-output "0.8.0"]]
 
   :test-refresh {:notify-command ["terminal-notifier"
-                                  "-title" "Tests" "-message"]}}
+                                  "-title" "Tests" "-message"]}
+
+  :jvm-opts ["-DproxySet=true"
+             "-DproxyHost=127.0.0.1"
+             "-DproxyPort=8888"
+             "-Djavax.net.ssl.trustStore=/Users/chad/.charles/CharlesKeystore"
+             "-Djavax.net.ssl.trustStorePassword=Charles"]}
 
  :dev
  {:source-paths ["dev"]
