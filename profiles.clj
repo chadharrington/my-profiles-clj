@@ -29,11 +29,13 @@
   :test-refresh {:notify-command ["terminal-notifier"
                                   "-title" "Tests" "-message"]}
 
-  :jvm-opts ["-DproxySet=true"
-             "-DproxyHost=127.0.0.1"
-             "-DproxyPort=8888"
-             "-Djavax.net.ssl.trustStore=/Users/chad/.charles/CharlesKeystore"
-             "-Djavax.net.ssl.trustStorePassword=Charles"]}
+  ;; For Charles debugging
+  ;; :jvm-opts ["-DproxySet=true"
+  ;;            "-DproxyHost=127.0.0.1"
+  ;;            "-DproxyPort=8888"
+  ;;            "-Djavax.net.ssl.trustStore=/Users/chad/.charles/CharlesKeystore"
+  ;;            "-Djavax.net.ssl.trustStorePassword=Charles"]
+  }
 
  :dev
  {:source-paths ["dev"]
