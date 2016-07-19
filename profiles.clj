@@ -8,8 +8,11 @@
 
   :plugins
   [[com.jakemccrary/lein-test-refresh "0.15.0"]
-   [lein-ancient "0.6.10" :exclusions [org.clojure/clojure commons-codec]]
+   [lein-ancient "0.6.10"
+    :exclusions [commons-codec org.apache.httpcomponents/httpclient
+                 org.clojure/clojure]]
    [lein-bikeshed "0.3.0" :exclusions [org.clojure/clojure]]
+   [lein-cljfmt "0.5.3"]
    [lein-cloverage "1.0.6"]
    [lein-cprint "1.2.0" :exclusions [org.clojure/clojure]]
    [lein-pprint "1.1.1"]
@@ -26,16 +29,15 @@
    [org.clojure/tools.nrepl "0.2.12"]
    [pjstadig/humane-test-output "0.8.0"]]
 
-  :test-refresh {:notify-command ["terminal-notifier"
-                                  "-title" "Tests" "-message"]}
-
   ;; For Charles debugging
   ;; :jvm-opts ["-DproxySet=true"
   ;;            "-DproxyHost=127.0.0.1"
   ;;            "-DproxyPort=8888"
   ;;            "-Djavax.net.ssl.trustStore=/Users/chad/.charles/CharlesKeystore"
   ;;            "-Djavax.net.ssl.trustStorePassword=Charles"]
-  }
+
+  :test-refresh {:notify-command ["terminal-notifier"
+                                  "-title" "Tests" "-message"]}}
 
  :dev
  {:source-paths ["dev"]
