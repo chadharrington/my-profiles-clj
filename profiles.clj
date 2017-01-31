@@ -9,7 +9,10 @@
   :plugins
   [[com.jakemccrary/lein-test-refresh "0.18.1"]
    [lein-ancient "0.6.10"
-    :exclusions [commons-codec org.apache.httpcomponents/httpclient
+    :exclusions [com.amazonaws/aws-java-sdk-core
+                 com.amazonaws/aws-java-sdk-s3
+                 commons-codec
+                 org.apache.httpcomponents/httpclient
                  org.clojure/clojure]]
    [lein-bikeshed "0.4.1"
     :exclusions [org.clojure/clojure org.clojure/tools.cli]]
@@ -18,7 +21,7 @@
    [lein-cprint "1.2.0" :exclusions [org.clojure/clojure]]
    [lein-pprint "1.1.2"]
    [jonase/eastwood "0.2.3" :exclusions [org.clojure/clojure]]
-   [lein-kibit "0.1.3" :exclusions [org.clojure/clojure]]
+   [lein-kibit "0.1.2" :exclusions [org.clojure/clojure]]
    ;;   [cider/cider-nrepl "0.14.0"]
    ;;   [cider/cider-nrepl "0.15.0-SNAPSHOT"]
    [lein-try "0.4.3"]]
