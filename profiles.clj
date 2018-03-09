@@ -4,8 +4,8 @@
                (pjstadig.humane-test-output/activate!)]
 
   :plugins
-  [[com.jakemccrary/lein-test-refresh "0.21.1"]
-   [lein-bikeshed "0.5.0"
+  [[com.jakemccrary/lein-test-refresh "0.22.0"]
+   [lein-bikeshed "0.5.1"
     :exclusions [org.clojure/clojure org.clojure/tools.cli]]
    [lein-cljfmt "0.5.7"
     :exclusions [org.clojure/clojure org.clojure/tools.reader]]
@@ -22,4 +22,4 @@
                                   "-title" "Tests" "-message"]}}
 
  :repl
- {:plugins [[cider/cider-nrepl "0.15.1"]]}}
+ {:plugins [[cider/cider-nrepl "0.16.0"]]}}
