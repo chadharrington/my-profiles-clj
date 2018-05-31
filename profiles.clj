@@ -10,7 +10,7 @@
    [lein-cljfmt "0.5.7"
     :exclusions [org.clojure/clojure org.clojure/tools.reader]]
    [lein-cprint "1.3.0" :exclusions [org.clojure/clojure]]
-   [jonase/eastwood "0.2.5" :exclusions [org.clojure/clojure]]
+   [jonase/eastwood "0.2.6" :exclusions [org.clojure/clojure]]
    [lein-kibit "0.1.6" :exclusions [org.clojure/clojure]]
    [lein-try "0.4.3"]]
 
@@ -22,4 +22,4 @@
                                   "-title" "Tests" "-message"]}}
 
  :repl
- {:plugins [[cider/cider-nrepl "0.16.0"]]}}
+ {:plugins [[cider/cider-nrepl "0.17.0"]]}}
