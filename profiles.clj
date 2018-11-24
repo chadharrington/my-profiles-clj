@@ -9,10 +9,11 @@
     :exclusions [org.clojure/clojure org.clojure/tools.cli]]
    [lein-cljfmt "0.6.1"
     :exclusions [org.clojure/clojure org.clojure/tools.reader]]
-   [lein-cprint "1.3.0" :exclusions [org.clojure/clojure]]
+   [lein-cprint "1.3.0" :exclusions [fipp org.clojure/clojure]]
    [jonase/eastwood "0.3.3" :exclusions [org.clojure/clojure]]
    [lein-kibit "0.1.6" :exclusions [org.clojure/clojure]]
-   [lein-try "0.4.3"]]
+   [lein-try "0.4.3"]
+   [fipp "0.6.14"]]
 
   :dependencies
   [[org.clojure/tools.nrepl "0.2.13"]
